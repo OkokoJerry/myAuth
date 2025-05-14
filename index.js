@@ -43,7 +43,7 @@ app.post('/signup', async (req, res) => {
     res.render('home');
 });
 
-app.get('/signup', (req, res) => {
+app.get('', (req, res) => {
     res.render('signup');
 });
 
