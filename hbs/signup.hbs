@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYTEKS | SIGNUP</title>
+</head>
+   <style>
+
+        body{
+            height: 100vh;
+            width: 100wh;
+            margin: 0;
+            text-align: center;
+            background-color: whitesmoke;
+        } 
+        form{
+            margin: 40px 70px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            box-shadow: 0 0 7px rgb(85, 77, 77);
+            border-radius: 6px;
+            padding: 50px;
+        }
+        input{
+            margin: 5px 20px;
+            padding: 6px;
+            border: solid .5px #787373;
+        }
+        button{
+            padding: 5px;
+            width: 30%;
+            margin: auto;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #7d7878;
+            text-transform: uppercase;
+            margin-top: 25px;
+            letter-spacing: 4px;
+
+        }
+        a{
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+            box-shadow: 0 0 6px rgb(74, 65, 65);
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #000;
+            margin-top: 20px;
+        }
+        @media(max-width: 700px){
+        body{
+            height: 100vh;
+            width: 100wh;
+            margin: 0;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+        h2{
+            margin:10px auto;
+            text-align: left;
+            margin-left: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        form{
+            margin: 40px 70px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            width: 30%;
+            padding: 5px;
+            margin: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-shadow: 0 0 7px rgb(71, 65, 65);
+        }
+        input{
+            padding: 7px;
+            margin: 4px 30px;
+            border-radius: 4px;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+            box-shadow: 0 0 6px rgb(74, 65, 65);
+            border-radius: 5px;
+            padding: 6px 10px;
+            color: #000;
+        }
+        }
+    </style>
+<body>
+    <h2>Sign up</h2>
+
+    <form action="/signup" method="post">
+        <input type="text" name="name" id="" placeholder="Name">
+
+        <input type="email" name="email" placeholder="Email">
+
+        <input type="password" name="password" id="" placeholder="Password">
+    <br>
+        <button type="submit">SIGN UP</button>
+    </form>
+    <p>Already have an accout?</p>
+    <br>
+    <a href="login">Click here to Login</a>
+</body>
+</html>
